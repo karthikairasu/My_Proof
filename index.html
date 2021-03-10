@@ -1,30 +1,192 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
-    <!-- <title>Password Strength Indicator | CodingNepal</title> -->
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-      <header>Password Strength Indicator <br>in HTML CSS & JavaScript</header>
-      <form action="#">
-        <div class="field">
-          <input onkeyup="trigger()" type="password" placeholder="Type password">
-          <span class="showBtn">SHOW</span>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Karthi</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <!-- clear Cookies -->
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <!-- <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> -->
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <!-- Favicons -->
+  <meta name="theme-color" content="#0B5E97">
+  <link rel="icon" type="image/png" href="assets/images/kk.png" sizes="194x194">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Play|Titillium+Web|Changa|Roboto|Lobster|Kufam|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Style files -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- owl carousel Style files -->
+  <link href="assets/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Aos Style files -->
+  <link href="assets/aos/aos.css" rel="stylesheet">
+  <link href="assets/animate.css/animate.min.css" rel="stylesheet">
+  <!-- venobox Style files -->
+  <link href="assets/venobox/venobox.css" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
+  <link rel="stylesheet" href="assets/lib/style_login.css">
+  <link rel="manifest" href="assets/lib/manifest.json">
+  <style type="text/css">
+    
+  </style>
+</head>
+<body>
+
+<div class="container-fluid mt-5 pt-5">
+<header>
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark sd" style="height: 70px">
+    <a class="navbar-brand mr-0 ml-3 p-0" data-aos="zoom-in" href="#"><img class="" src="assets/images/kk.png" style="height: 66px;width: auto"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <section>
+    <div class="row">
+      <!-- <div class="col-sm-6">
+         <div class="card shadow p-5" data-aos="flip-left">Sample</div>
+      </div>
+      <div class="col-sm-6">
+      <h4 class="animate__animated animate__bounce">ANCHOR PLACEMENT</h4>
+         <div data-aos="fade-up" data-aos-anchor-placement="top-bottom">AOS Animation url=> http://michalsnik.github.io/aos/</div>
+         <a class="venobox" href="assets/images/food.jpg"><img src="assets/images/food.jpg" alt="image alt" style="height: 100px;width: auto"/></a>
+      </div> -->
+    </div> 
+  </section>
+  <!-- ======= Gallery Section ======= -->
+    <!-- <section id="gallery" class="gallery">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-<div class="indicator">
-          <span class="weak"></span>
-          <span class="medium"></span>
-          <span class="strong"></span>
+
+        <div class="owl-carousel gallery-carousel" data-aos="fade-up" data-aos-delay="100">
+          <a href="assets/images/food.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/images/food.jpg" alt=""></a>
+          <a href="assets/images/food.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/images/food.jpg" alt=""></a>
+          <a href="assets/images/food.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/images/food.jpg" alt=""></a>
+          <a href="assets/images/food.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/images/food.jpg" alt=""></a>
+          <a href="assets/images/food.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/images/food.jpg" alt=""></a>
+          <a href="assets/images/food.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/images/food.jpg" alt=""></a>
+          <a href="assets/images/food.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/images/food.jpg" alt=""></a>
+          <a href="assets/images/food.jpg" class="venobox" data-gall="gallery-carousel"><img src="assets/images/food.jpg" alt=""></a>
         </div>
-<div class="text">
+
+      </div>
+    </section> -->
+    <!-- End Gallery Section -->
+
+    <section>
+    <div class="row">
+      <div class="col-sm-12 mx-auto">
+          <div class="container" data-aos="flip-left">
+          <header>Login</header>
+          <form action="#">
+            <div class="field">
+              <input onkeyup="trigger()" type="password" id="pass" placeholder="Type password">
+              <span class="showBtn">SHOW</span>
+            </div>
+            <div class="indicator">
+                      <span class="weak"></span>
+                      <span class="medium"></span>
+                      <span class="strong"></span>
+                    </div>
+            <div class="text">
+            </div>
+            <button class="btn btn-success my-2" onclick="validate()">Submit</button>
+            </form>
+          </div>
+      </div>
+    </div> 
+  </section>
+</main>
 </div>
-</form>
-</div>
-<script>
+    
+  <div id="preloader"></div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/MDB-free/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/owl.carousel/owl.carousel.min.js"></script>
+  <!-- aos script files -->
+  <script src="assets/aos/aos.js"></script>
+  <!-- venobox script files -->
+  <script src="assets/venobox/venobox.min.js"></script>
+  
+  <script type="text/javascript">
+    // Preloader
+    $(window).on('load', function() {
+      if ($('#preloader').length) {
+        $('#preloader').delay(100).fadeOut('slow', function() {
+          $(this).remove();
+        });
+      }
+    });
+    // Gallery carousel (uses the Owl Carousel library)
+    $(".gallery-carousel").owlCarousel({
+      autoplay: true,
+      dots: true,
+      loop: true,
+      center: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        992: {
+          items: 4
+        },
+        1200: {
+          items: 5
+        }
+      }
+    });
+   // Init AOS
+    function aos_init() {
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    }
+    $(window).on('load', function() {
+      aos_init();
+    });
+   // Initiate venobox lightbox
+    $(document).ready(function() {
+      $('.venobox').venobox();
+    });
+  </script>
+  <script>
       const indicator = document.querySelector(".indicator");
       const input = document.querySelector("input");
       const weak = document.querySelector(".weak");
@@ -84,7 +246,16 @@
           showBtn.style.display = "none";
         }
       }
+      function validate(){
+        var password = document.getElementById("pass").value;
+        var verify = "M15@Proof";
+        if(verify == password){
+          location.replace("https://karthikairasu.github.io/My_Proof/my_proof/home.html");
+          alert("login successful!...");
+        }else{
+          location.replace("https://karthikairasu.github.io/My_Proof/index.html");
+        }
+      }
     </script>
-
-  </body>
+</body>
 </html>
